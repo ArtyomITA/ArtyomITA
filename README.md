@@ -12,8 +12,47 @@
 - 📘 Wrote the **[NVIDIA GTX 1080 (sm_61) AI Full Guide](https://github.com/ArtyomITA/nvidia-gtx1080-sm61-ai-full-guide)**: everything I made run fast on a 2016 GPU with 8 GB
 - ⚡ Running **Qwen3.8 Flash-Next** with 4 users × 227k tokens on one RTX PRO 6000: **[blackwell6000-qwen3.8-flash-next](https://github.com/ArtyomITA/blackwell6000-qwen3.8-flash-next)**
 - 🤝 Open to collaboration on inference kernels, speculative decoding and local agents
-- 🧩 With friends: **[claude-plugins](https://github.com/Partido-De-What/claude-plugins)**, a chat room where agents work and argue together
 - 🎲 Fun fact: my GTX 1080 from 2016 runs a ternary 9B model at **84 tok/s**
+
+### 🧩 claude-plugins, with friends
+
+**[chatroom](https://github.com/Partido-De-What/claude-plugins)** for Claude Code and Codex: a multi-agent harness built on this year's research on autonomous research agents.
+
+- **Research mode**: fixed roles (workers, proposer, auditor, registrar, searchers), phases with gates, a pre-registered contract, and a kernel that checks every proposal: sealed evaluator, a worktree per worker, repeated measures, every attempt tagged, a final run on held-out data.
+- **Harness enforced by code**: a live group chat without turns, instant alerts, a task board with leases, handoffs and loans, closing only with evidence, detectors for stalled or unproven work.
+- **Friends**: share your office over a tunnel with a PIN, send your agents into a friend's common room, visit each other's office and watch together.
+- **Spawn**: summon free models from OpenRouter, NVIDIA NIM, Groq, Google AI Studio, Mistral, Cohere, Cloudflare and Hugging Face as roles. A role keeps its mission and notes; when its context fills up it writes a handover, and when a host runs out of quota it moves to another one. Long tool output is compressed for every agent.
+- **A 3D voxel office** where you watch each agent type, read, wait for a permission or take a break.
+
+<details>
+<summary><b>Influenced by</b> (24 papers)</summary>
+
+- [The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery](https://arxiv.org/abs/2610.18933)
+- [Harness-Search: Guiding Long-Horizon Search through Multi-Agent Coordination](https://arxiv.org/abs/2610.05382)
+- [PatchBoard: Schema-Grounded State Mutation for Reliable and Auditable LLM Multi-Agent Collaboration](https://arxiv.org/abs/2605.29313)
+- [MemTX: Transactional Belief Commit for Stateful Agent Memory](https://arxiv.org/abs/2607.23929)
+- [SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery](https://arxiv.org/abs/2607.02807)
+- [CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery](https://arxiv.org/abs/2604.01658)
+- [ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration](https://arxiv.org/abs/2605.03042)
+- [Accelerating scientific discovery with Co-Scientist](https://arxiv.org/abs/2502.18864)
+- [IdeaScientist: Orchestrating Agents for Grounded Scientific Ideation](https://arxiv.org/abs/2610.04074)
+- [ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond](https://arxiv.org/abs/2608.14354)
+- [OneDayAgent: Towards a Long-Horizon Harness for Autonomous Agents](https://arxiv.org/abs/2608.05013)
+- [Rethinking Multi-Agent Collaboration: When More Is Less](https://arxiv.org/abs/2609.19759)
+- [AI Research Agents Narrow Scientific Exploration](https://arxiv.org/abs/2605.27905)
+- [Autonomous Research Agents: A Survey of AI Scientists and the Verification Gap](https://arxiv.org/abs/2608.05179)
+- [ARAC: Benchmarking Auto-Research's Alignment and Completeness on End-to-End Researchs](https://arxiv.org/abs/2608.12788)
+- [A Vocabulary for Multi-Agent Automated Research Systems](https://arxiv.org/abs/2607.22682)
+- [Position: AI Agents in Scientific Teams Should Be Studied as Human-Agent Systems](https://arxiv.org/abs/2608.14667)
+- [Benchmarking Open-Ended Multi-Agent Coordination in Language Agents](https://arxiv.org/abs/2606.08340)
+- [Harnessing the Collective Intelligence of AI Agents in the Wild for New Discoveries](https://arxiv.org/abs/2606.10402)
+- [Mixture of Complementary Agents for Robust LLM Ensemble](https://arxiv.org/abs/2605.24048)
+- [Beyond Consensus: Trace-Level Synthesis in Mixture of Agents](https://arxiv.org/abs/2605.29116)
+- [When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models](https://arxiv.org/abs/2606.27288)
+- [Are Diversity Metrics Measuring Diversity? A Capability-Controlled Audit of Majority-Vote Gain in LLM Ensembles](https://arxiv.org/abs/2607.20768)
+- [What Do Evolutionary Coding Agents Evolve?](https://arxiv.org/abs/2605.20086)
+
+</details>
 
 ### 🔀 Upstream
 
