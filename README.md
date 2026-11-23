@@ -1,56 +1,78 @@
 <h1 align="center">Hi 👋, I'm Adrian</h1>
-<h3 align="center">AI engineer: LLM inference on consumer and datacenter GPUs, CUDA kernels, open source</h3>
+<h3 align="center">AI/ML engineer · AI tech lead at KeyTech SRL<br>Training and kernels on Blackwell, fast local inference on a GTX 1080 and inside a VR headset, agents that correct themselves</h3>
 
 <p align="center">
-  <a href="https://artyomita.github.io"><img src="https://img.shields.io/badge/website-artyomita.github.io-2ef2b0?style=for-the-badge&labelColor=0d0f13" alt="website"></a>
+  <a href="https://artyomita.github.io"><img src="https://img.shields.io/badge/website-artyomita.github.io-4fd6b9?style=for-the-badge&labelColor=0a1514" alt="website"></a>
   <a href="https://www.linkedin.com/in/adrian-ciprian-iancu-a2a477391"><img src="https://img.shields.io/badge/LinkedIn-Adrian%20Ciprian%20Iancu-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
   <a href="https://huggingface.co/adriandj3"><img src="https://img.shields.io/badge/Hugging%20Face-adriandj3-FFCC4D?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face"></a>
   <a href="https://www.instagram.com/artyomita"><img src="https://img.shields.io/badge/Instagram-artyomita-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 </p>
 
-- 🛰️ Building **[Vergilius](https://github.com/ArtyomITA/vergilius)**, a local OSINT assistant: open sources, a small model on your own GPU, nothing leaves the machine
+- 🥽 **[Optimized kernels for VR](https://github.com/ArtyomITA/lfm3-omni-voice-quest3s)**: LFM3-Omni-2B speaks in real time inside a Meta Quest 3S, from 0.56x to **1.17x** real time with llama.cpp. No cloud, no PC, no cable
+- 🛰️ **[Vergilius](https://github.com/ArtyomITA/vergilius)**, a local OSINT assistant: one model, **LFM3 1C** (my merge of LFM3-1.7B and LFM3-VL-2B), writes, uses tools, looks at the screen and clicks. Nothing leaves the machine
+- ⚡ Training and kernels on **Blackwell**: Qwen3.8 Flash-Next with 4 users × 227k tokens on one RTX PRO 6000, exact kernels: **[blackwell6000-qwen3.8-flash-next](https://github.com/ArtyomITA/blackwell6000-qwen3.8-flash-next)**
 - 📘 Wrote the **[NVIDIA GTX 1080 (sm_61) AI Full Guide](https://github.com/ArtyomITA/nvidia-gtx1080-sm61-ai-full-guide)**: everything I made run fast on a 2016 GPU with 8 GB
-- ⚡ Running **Qwen3.8 Flash-Next** with 4 users × 227k tokens on one RTX PRO 6000: **[blackwell6000-qwen3.8-flash-next](https://github.com/ArtyomITA/blackwell6000-qwen3.8-flash-next)**
-- 🤝 Open to collaboration on inference kernels, speculative decoding and local agents
+- 🤝 Open to collaboration on inference and training kernels, speculative decoding, other inference engines and local agents
 - 🎲 Fun fact: my GTX 1080 from 2016 runs a ternary 9B model at **84 tok/s**
 
-### 🧩 claude-plugins, with friends
+### 🧩 chatroom, a multi-agent orchestrator
 
-**[chatroom](https://github.com/Partido-De-What/claude-plugins)** for Claude Code and Codex: a multi-agent harness built on this year's research on autonomous research agents.
+**[chatroom](https://github.com/Partido-De-What/claude-plugins)** for Claude Code and Codex: **auto-harness**, **research** and a **model council** in one plugin. Built on **37 papers** and on ideas from Qwen Code, DeepSeek, Hermes and Pi. Token-efficient by design.
 
-- **Research mode**: fixed roles (workers, proposer, auditor, registrar, searchers), phases with gates, a pre-registered contract, and a kernel that checks every proposal: sealed evaluator, a worktree per worker, repeated measures, every attempt tagged, a final run on held-out data.
-- **Harness enforced by code**: a live group chat without turns, instant alerts, a task board with leases, handoffs and loans, closing only with evidence, detectors for stalled or unproven work.
-- **Friends**: share your office over a tunnel with a PIN, send your agents into a friend's common room, visit each other's office and watch together.
-- **Spawn**: summon free models from OpenRouter, NVIDIA NIM, Groq, Google AI Studio, Mistral, Cohere, Cloudflare and Hugging Face as roles. A role keeps its mission and notes; when its context fills up it writes a handover, and when a host runs out of quota it moves to another one. Long tool output is compressed for every agent.
-- **A 3D voxel office** where you watch each agent type, read, wait for a permission or take a break.
+- **Auto-harness**: the room learns from its own mistakes. Repeated failures become lessons on trial, kept only if they hold in a second room; skills write themselves and enter only after their check passes.
+- **Research**: one file, a sealed evaluator, a number to beat. Workers in their own worktrees, repeated measures, every attempt tagged, a final run on held-out data. One overnight room made a text-to-speech kernel on a Meta Quest 3S 2.1x faster.
+- **Model council**: one command puts your situation in front of 10 free models for improvements, a fact-check and ideas.
+- **Rules in code, not in the prompt**: a plan closes only when every agent has said what it checked, a task is done only with a real proof, and agents stay quiet unless a message concerns them.
+- **Claude Code and Codex in the same room**, other harnesses next. Lend your agents to a friend with a PIN, summon free models as roles, and watch everyone in a 3D voxel office.
 
 <details>
-<summary><b>Influenced by</b> (24 papers)</summary>
+<summary><b>Built on</b> 37 papers</summary>
+
+**🧠 Auto-harness · 11 papers on skills that create and improve themselves**
+
+- [Voyager](https://arxiv.org/abs/2305.16291)
+- [SkillsBench](https://arxiv.org/abs/2602.12670)
+- [SoK: Agentic Skills](https://arxiv.org/abs/2602.20867)
+- [AutoSkill](https://arxiv.org/abs/2603.01145)
+- [EvoSkill](https://arxiv.org/abs/2603.02766)
+- [SkillX](https://arxiv.org/abs/2604.04804)
+- [SkillMaster](https://arxiv.org/abs/2605.08693)
+- [SkillsVote](https://arxiv.org/abs/2605.18401)
+- [MUSE-Autoskill](https://arxiv.org/abs/2605.27366)
+- [SkillAxe](https://arxiv.org/abs/2606.10546)
+- [SAGE](https://arxiv.org/abs/2512.17102)
+
+**💬 Chatroom · 8 papers on how agent teams coordinate and what it costs**
+
+- [When Agents Coordinate: Measuring Coordination in Multi-Agent AI Coding](https://arxiv.org/abs/2608.16801)
+- [When Parallelism Pays Off: Cohesion-Aware Task Partitioning for Multi-Agent Coding](https://arxiv.org/abs/2606.00953)
+- [Token Reduction Is Not Cost Reduction](https://arxiv.org/abs/2607.12161)
+- [Do We Need Complex Topology Control? Distinct-Peer Random Routing Improves Cost-Efficiency in Sparse Multi-Agent Debate](https://arxiv.org/abs/2609.27150)
+- [The Compaction Cliff in Long-Running AI Agent Memory](https://arxiv.org/abs/2608.22752)
+- [What Does Context Compression Cost an Agent? Interaction Costs Unrevealed by Task-Completion Metrics](https://arxiv.org/abs/2608.16370)
+- [SoL-Pi: Recursively Scaling Auto-Research Loops for Efficient Agent Harness](https://arxiv.org/abs/2609.20519)
+- [Persistent LLM Orchestration of Heterogeneous Robot Teams via Partial Delegation to Multi-Agent Protocols](https://arxiv.org/abs/2610.15224)
+
+**🔬 Research · 18 papers on AI scientists, honest measurement and reward hacking**
 
 - [The Agentic Scientist: Orchestrating Coding Agents for Automated Scientific (Co-)Discovery](https://arxiv.org/abs/2610.18933)
 - [Harness-Search: Guiding Long-Horizon Search through Multi-Agent Coordination](https://arxiv.org/abs/2610.05382)
 - [PatchBoard: Schema-Grounded State Mutation for Reliable and Auditable LLM Multi-Agent Collaboration](https://arxiv.org/abs/2605.29313)
 - [MemTX: Transactional Belief Commit for Stateful Agent Memory](https://arxiv.org/abs/2607.23929)
-- [SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery](https://arxiv.org/abs/2607.02807)
-- [CORAL: Towards Autonomous Multi-Agent Evolution for Open-Ended Discovery](https://arxiv.org/abs/2604.01658)
-- [ARIS: Autonomous Research via Adversarial Multi-Agent Collaboration](https://arxiv.org/abs/2605.03042)
-- [Accelerating scientific discovery with Co-Scientist](https://arxiv.org/abs/2502.18864)
-- [IdeaScientist: Orchestrating Agents for Grounded Scientific Ideation](https://arxiv.org/abs/2610.04074)
-- [ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond](https://arxiv.org/abs/2608.14354)
-- [OneDayAgent: Towards a Long-Horizon Harness for Autonomous Agents](https://arxiv.org/abs/2608.05013)
-- [Rethinking Multi-Agent Collaboration: When More Is Less](https://arxiv.org/abs/2609.19759)
 - [AI Research Agents Narrow Scientific Exploration](https://arxiv.org/abs/2605.27905)
-- [Autonomous Research Agents: A Survey of AI Scientists and the Verification Gap](https://arxiv.org/abs/2608.05179)
-- [ARAC: Benchmarking Auto-Research's Alignment and Completeness on End-to-End Researchs](https://arxiv.org/abs/2608.12788)
-- [A Vocabulary for Multi-Agent Automated Research Systems](https://arxiv.org/abs/2607.22682)
-- [Position: AI Agents in Scientific Teams Should Be Studied as Human-Agent Systems](https://arxiv.org/abs/2608.14667)
-- [Benchmarking Open-Ended Multi-Agent Coordination in Language Agents](https://arxiv.org/abs/2606.08340)
-- [Harnessing the Collective Intelligence of AI Agents in the Wild for New Discoveries](https://arxiv.org/abs/2606.10402)
-- [Mixture of Complementary Agents for Robust LLM Ensemble](https://arxiv.org/abs/2605.24048)
-- [Beyond Consensus: Trace-Level Synthesis in Mixture of Agents](https://arxiv.org/abs/2605.29116)
-- [When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models](https://arxiv.org/abs/2606.27288)
-- [Are Diversity Metrics Measuring Diversity? A Capability-Controlled Audit of Majority-Vote Gain in LLM Ensembles](https://arxiv.org/abs/2607.20768)
+- [IdeaScientist: Orchestrating Agents for Grounded Scientific Ideation](https://arxiv.org/abs/2610.04074)
+- [SwarmResearch: Orchestrating Coding Agents for Open-Ended Discovery](https://arxiv.org/abs/2607.02807)
+- [ScienceFlow: A long-horizon agent for ML research, scientific discovery and beyond](https://arxiv.org/abs/2608.14354)
 - [What Do Evolutionary Coding Agents Evolve?](https://arxiv.org/abs/2605.20086)
+- [ARAC: Benchmarking Auto-Research's Alignment and Completeness on End-to-End Researchs](https://arxiv.org/abs/2608.12788)
+- [Autonomous Research Agents: A Survey of AI Scientists and the Verification Gap](https://arxiv.org/abs/2608.05179)
+- [The Winner's Curse in LLM Self-Improvement Loops: Selection Noise, Lock-in, and Acceptance Rules](https://arxiv.org/abs/2610.09239)
+- [RealisticTritonBench: A Benchmark for Triton-Kernel Generation in Real-World AI Frameworks](https://arxiv.org/abs/2608.12004)
+- [KREX: Concurrent Kernel Benchmarking on Shared GPUs via Region-Granular Exclusivity](https://arxiv.org/abs/2609.30057)
+- [BAITBENCH: Measuring Agent Reward Hacking with Optional Shortcuts Planted in ML Tasks](https://arxiv.org/abs/2608.30724)
+- [Beyond Execution: Auditing Experimental Fidelity in LLM-Driven Scientific Research](https://arxiv.org/abs/2608.26753)
+- [When Does Combining Language Models Help? A Co-Failure Ceiling on Routing, Voting, and Mixture-of-Agents Across 67 Frontier Models](https://arxiv.org/abs/2606.27288)
+- [Beyond Consensus: Trace-Level Synthesis in Mixture of Agents](https://arxiv.org/abs/2605.29116)
 
 </details>
 
@@ -60,8 +82,8 @@
 |---|---|---|
 | stable-diffusion.cpp | [#2202](https://github.com/leejet/stable-diffusion.cpp/pull/2202) LoRA `baked_scale` fix | ![merged](https://img.shields.io/badge/merged-8250df?style=flat-square) |
 | PrismML llama.cpp | [#368](https://github.com/PrismML-Eng/llama.cpp/pull/368) Pascal PQ2_0 mat-vec, +17% | ![merged](https://img.shields.io/badge/merged-8250df?style=flat-square) |
-| vLLM | [#58863](https://github.com/vllm-project/vllm/pull/58863) exact GDN replay commit, adopted in the PR | ![adopted](https://img.shields.io/badge/adopted-2ef2b0?style=flat-square&labelColor=0d0f13) |
-| llama.cpp | [#27721](https://github.com/ggml-org/llama.cpp/pull/27721) CUDA graphs on Pascal, +40% MoE | ![open](https://img.shields.io/badge/open-ff6a57?style=flat-square) |
+| vLLM | [#58863](https://github.com/vllm-project/vllm/pull/58863) exact GDN replay commit, adopted in the PR | ![adopted](https://img.shields.io/badge/adopted-4fd6b9?style=flat-square&labelColor=0a1514) |
+| llama.cpp | [#27721](https://github.com/ggml-org/llama.cpp/pull/27721) CUDA graphs on Pascal, up to +75% on MoE | ![open](https://img.shields.io/badge/open-f2c14e?style=flat-square) |
 
 ### 🤗 Models on Hugging Face
 
