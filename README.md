@@ -8,11 +8,11 @@
   <a href="https://www.instagram.com/artyomita"><img src="https://img.shields.io/badge/Instagram-artyomita-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"></a>
 </p>
 
-- 🥽 **[Optimized kernels for VR](https://github.com/ArtyomITA/lfm3-omni-voice-quest3s)**: LFM3-Omni-2B speaks in real time inside a Meta Quest 3S, from 0.56x to **1.17x** real time with llama.cpp. No cloud, no PC, no cable
 - 🛰️ **[Vergilius](https://github.com/ArtyomITA/vergilius)**, a local OSINT assistant: one model, **LFM3 1C** (my merge of LFM3-1.7B and LFM3-VL-2B), writes, uses tools, looks at the screen and clicks. Nothing leaves the machine
 - ⚡ Training and kernels on **Blackwell**: Qwen3.8 Flash-Next with 4 users × 227k tokens on one RTX PRO 6000, exact kernels: **[blackwell6000-qwen3.8-flash-next](https://github.com/ArtyomITA/blackwell6000-qwen3.8-flash-next)**
 - 📘 Wrote the **[NVIDIA GTX 1080 (sm_61) AI Full Guide](https://github.com/ArtyomITA/nvidia-gtx1080-sm61-ai-full-guide)**: everything I made run fast on a 2016 GPU with 8 GB
 - 🤝 Open to collaboration on inference and training kernels, speculative decoding, other inference engines and local agents
+- 🥽 **[Optimized kernels for VR](https://github.com/ArtyomITA/lfm3-omni-voice-quest3s)**: LFM3-Omni-2B speaks in real time inside a Meta Quest 3S, from 0.56x to **1.17x** real time with llama.cpp. No cloud, no PC, no cable
 - 🎲 Fun fact: my GTX 1080 from 2016 runs a ternary 9B model at **84 tok/s**
 
 ### 🧩 chatroom, a multi-agent orchestrator
